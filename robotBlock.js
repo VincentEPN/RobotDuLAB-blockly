@@ -12,6 +12,20 @@ Blockly.Blocks['Avancer'] = {
    }
 };
 
+Blockly.Blocks['Test'] = {
+  helpUrl: 'http://wiki.labaixbidouille.com/index.php/RoboduLAB',
+  init: function() {
+    this.jsonInit({
+      "previousStatement": null,
+      "nextStatement": null
+    });
+    this.appendDummyInput()
+        .appendField("Test");
+    this.setColour(200);
+    this.setTooltip('Aprendre');
+   }
+};
+
 Blockly.Blocks['Reculer'] = {
   helpUrl: 'http://wiki.labaixbidouille.com/index.php/RoboduLAB',
   init: function() {
