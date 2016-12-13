@@ -12,7 +12,7 @@ Blockly.Blocks['Avancer'] = {
    }
 };
 
-Blockly.Blocks['Tourne en rond'] = {
+Blockly.Blocks['Tourneenrond'] = {
   helpUrl: 'http://wiki.labaixbidouille.com/index.php/RoboduLAB',
   init: function() {
     this.jsonInit({
@@ -20,7 +20,7 @@ Blockly.Blocks['Tourne en rond'] = {
       "nextStatement": null
     });
     this.appendDummyInput()
-        .appendField("Tourne");
+        .appendField("Tourne en rond");
     this.setColour(300);
     this.setTooltip('Fait tourner le robot');
    }
