@@ -12,6 +12,21 @@ Blockly.Blocks['Avancer'] = {
    }
 };
 
+Blockly.Blocks['Tourne en rond'] = {
+  helpUrl: 'http://wiki.labaixbidouille.com/index.php/RoboduLAB',
+  init: function() {
+    this.jsonInit({
+      "previousStatement": null,
+      "nextStatement": null
+    });
+    this.appendDummyInput()
+        .appendField("Tourne");
+    this.setColour(300);
+    this.setTooltip('Fait tourner le robot');
+   }
+};
+
+
 Blockly.Blocks['Test'] = {
   helpUrl: 'http://wiki.labaixbidouille.com/index.php/RoboduLAB',
   init: function() {
