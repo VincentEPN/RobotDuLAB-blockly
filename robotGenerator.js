@@ -21,6 +21,16 @@ Blockly.Arduino ['Avancer'] = function (block)  {
   return  code;
 };
 
+Blockly.Arduino ['Tourneenrond'] = function (block)  {
+  Blockly.Arduino.setups_["setup_robotdulab"] = setup_robotdulab;
+  Blockly.Arduino.definitions_["define_robotdulab"] = define_robotdulab;
+  var code  ="robotDuLAB.Avancer();\n";  
+  code  +="delay("50");\n";
+  code  +="robotDuLAB.TournerADroite();\n";
+  code  +="delay("50");\n";
+  return  code;
+};
+
 Blockly.Arduino ['Test'] = function (block)  {
   var time = Blockly.Arduino.valueToCode(block, 'DELAY_TIME', Blockly.Arduino.ORDER_ATOMIC);
   var code  ="delay("+time+");\n";
